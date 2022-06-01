@@ -12,6 +12,10 @@ class Network(object):
         self.ip = ip
 
     def get_devices(self):
+        """
+        Get all devices on the network
+        :return: list of devices
+        """
         p_scanner = PortScanner()
         logging.info('Scanning {}...'.format(self.ip))
         p_scanner.scan(hosts=self.ip, arguments='-sn')

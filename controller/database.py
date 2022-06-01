@@ -52,6 +52,7 @@ def check_devices(devices):
             else:
                 logging.debug('Known device {} detected'.format(device.mac_address))
                 update_device(device.mac_address, device.name, device.ip_address, datetime.now(timezone.utc))
+        # TODO: create handler for unknown devices without MAC ADDRESS
 
 
 # Update device in database

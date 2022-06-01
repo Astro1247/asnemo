@@ -3,4 +3,5 @@ __pycache__/
 config.yaml
 data/
 venv/
+pyenv/
 .idea/
